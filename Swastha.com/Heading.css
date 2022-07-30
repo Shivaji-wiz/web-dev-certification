@@ -1,0 +1,69 @@
+ body {
+    margin: 0;
+    padding: 0;
+}
+
+h2 { color: black; text-align: center; } 
+
+.Animate {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-transform: uppercase;
+     text-decoration: none;
+     text-align: center;
+     color: red;
+     font-size: 30px;
+     font-family: verdana;
+     letter-spacing: 4px;
+     padding-left: 5px;
+     
+}
+
+.Animate::before,
+.Animate::after,
+span::before,
+span::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    transition: 0.5s;
+}
+
+.Animate::before {
+    top: -2px;
+    left: -2px;
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+}
+
+.Animate::after {
+    top: -2px;
+    right: -2px;
+    border-top: 2px solid red;
+    border-right: 2px solid red;
+}
+
+span::before {
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid red;
+    border-left: 2px solid red;
+}
+
+span::after {
+    bottom: -2px;
+    right: -2px;
+    border-bottom: 2px solid red;
+    border-right: 2px solid red;
+} 
+.Animate:hover::before,
+.Animate:hover::after,
+.Animate:hover span::before,
+.Animate:hover span::after {
+    width: calc(180px / 2);
+    height: calc(50px / 2);
+} 

@@ -1,0 +1,16 @@
+.Login{
+    color : gray;
+}
+
+.Login:hover{
+    color:lightgray;
+    text-decoration : none;
+}
+
+.sample{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
